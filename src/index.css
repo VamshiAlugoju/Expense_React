@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.Modal_bg{
+  background-color:rgb(7 7 7 / 77%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.Modal_div{
+  max-width: 450px;
+  min-width: 200px;
+  width: 40%;
+  /* border: 1px solid black; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  padding: 3rem 1.5rem;
+  border-radius: 10px;
+  background-color: white;
+  z-index: 10;
+  box-shadow: 0 0 5px white;
+}

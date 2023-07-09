@@ -23,9 +23,7 @@ function Navbar() {
         <li className="nav-item">
         <Link className='nav-link' to="/"  >Buy Premium</Link>
         </li>
-        <li className="nav-item">
-        <Link className='nav-link' to="/"  >Home</Link>
-        </li>
+        
       </ul>
       <span className="navbar-text">
        <Button>Log Out</Button>

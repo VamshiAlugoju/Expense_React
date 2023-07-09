@@ -3,26 +3,45 @@ import "./authpage.css"
 import Login from '../AuthComponents/Login'
 import Signup from '../AuthComponents/Signup';
 import ExpenseContext from '../../Context/Contex';
-
+import axios from 'axios';
+import {redirect,useNavigate} from "react-router-dom"
 
 function AuthPage() {
 
     const [LoginMode , setLoginMode] = React.useState(true);
     const ExpenseCtx = React.useContext(ExpenseContext)
+    const navigate = useNavigate()
     function changeMode()
     {
         setLoginMode(prev=>!prev);
     }
 
-    function handleClick()
+    async function handleClick(item)
     {
          if(LoginMode)
          {
-          console.log("login")
-           ExpenseContext.Login()
+          try{
+            const res = await axios.post('https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDRgbTFD72i47aWtRsLtEWmDyNrk5uqXdU',item)
+             console.log(res);
+             localStorage.setItem("token",res.data.idToken);
+         
+            navigate("/Dummypage")
+          }
+          catch(err){
+              alert(err.response.data.error.message)
+          }
+          //  ExpenseContext.Login()
          }
          else{
-          console.log("Signup")
+        try{
+         const res = await axios.post('https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDRgbTFD72i47aWtRsLtEWmDyNrk5uqXdU',item);
+         console.log(res);
+         changeMode();
+        }
+        catch(err)
+        {
+          alert(err.response.data.error.message);
+        }
          }
     }
 
