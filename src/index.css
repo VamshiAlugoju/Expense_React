@@ -25,7 +25,7 @@ code {
   max-width: 450px;
   min-width: 200px;
   width: 40%;
-  /* border: 1px solid black; */
+  border: 1px solid black;
   position: absolute;
   left: 50%;
   top: 50%;

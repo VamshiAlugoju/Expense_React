@@ -1,0 +1,12 @@
+
+.expenses_div{
+    height: fit-content;
+    max-height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+}
+ 
+.expense_item{
+    width: 99%;
+}
