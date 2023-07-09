@@ -1,0 +1,18 @@
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+
+.Form_Label{
+    color: #030388cf;
+    width: 100%;
+    padding-left: 1rem;
+    font-size: 37px;
+}
+
+.Form_Input{
+    font-size: 1rem;
+}
