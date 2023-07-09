@@ -1,8 +1,19 @@
 import { Button } from 'react-bootstrap';
 import React from 'react'
-import {Link} from "react-router-dom";
+import {Link,useNavigate} from "react-router-dom";
+import userLogo from "./user.png"
+import ExpenseContext from '../../Context/Contex';
 
 function Navbar() {
+
+  const ExpenseCtx = React.useContext(ExpenseContext);
+  const Navigate = useNavigate();
+  function Logout()
+  {
+    ExpenseCtx.Logout();
+    Navigate("/Auth")
+  }
+
   return (
     <>
     <nav className="navbar sticky-top w-100 bg-dark  navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
@@ -18,16 +29,17 @@ function Navbar() {
         <Link className='nav-link active' to="/"  >Home</Link>
         </li>
         <li className="nav-item">
-        <Link className='nav-link' to="/"  >Expense</Link>
+        <Link className='nav-link' to="/ExpensePage"  >Expense</Link>
         </li>
         <li className="nav-item">
         <Link className='nav-link' to="/"  >Buy Premium</Link>
         </li>
         
       </ul>
-      <span className="navbar-text">
-       <Button>Log Out</Button>
-    </span>
+   { ExpenseCtx.isLoggedin &&   <span className="navbar-text">
+        <img width={"50px"}  className="me-4" style={{cursor:"pointer"}} src={userLogo} alt="" />
+        <Button onClick={Logout}>Log Out</Button>
+    </span>}
     </div>
   </div>
 

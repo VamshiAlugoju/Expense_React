@@ -1,15 +1,19 @@
 import React from 'react'
 import  ReactDOM  from 'react-dom'
 import axios from 'axios';
+import loader from  "./pink.gif"
+import {useNavigate} from "react-router-dom"
 
 function UpdateProfile(props) {
 
     const Name = React.useRef();
     const Url = React.useRef();
-
+    const [isloading,setisloading] = React.useState(false);
+    const Navigate = useNavigate();
 
     async  function updateUser(e)
     {   
+        setisloading(true);
         e.preventDefault();
         const token = localStorage.getItem("token");
         const name = Name.current.value;
@@ -27,13 +31,17 @@ function UpdateProfile(props) {
                console.log(obj);
               const res = await axios.post('https://identitytoolkit.googleapis.com/v1/accounts:update?key=AIzaSyDRgbTFD72i47aWtRsLtEWmDyNrk5uqXdU',obj);
                 console.log(res)
+                Navigate("/ExpensePage")
            }
            catch(err)
            {
             console.log(err);
+            alert(err.response.data.error.message);
            }
 
         }
+
+        setisloading(false);
     }
 
 
@@ -54,8 +62,9 @@ function UpdateProfile(props) {
             <input ref={Url}  type="text" id="form1Example23"  placeholder='www.xyz.com' className="form-control Form_Input form-control-lg" />
           </div>
 
-          <button   type="submit" className="btn btn-primary btn-lg btn-block">Submit</button>
-         
+        {!isloading ?  <button   type="submit" className="btn btn-primary btn-lg btn-block">Submit</button>  
+         :
+         <button className='btn btn-outline-light' ><img width="50px" src={loader} alt="" /></button> }
         </form>
        </div>
 

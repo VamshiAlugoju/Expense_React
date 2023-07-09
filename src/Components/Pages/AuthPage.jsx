@@ -25,12 +25,12 @@ function AuthPage() {
              console.log(res);
              localStorage.setItem("token",res.data.idToken);
          
-            navigate("/Dummypage")
+             ExpenseCtx.Login()
+            navigate("/ExpensePage")
           }
           catch(err){
               alert(err.response.data.error.message)
           }
-          //  ExpenseContext.Login()
          }
          else{
         try{

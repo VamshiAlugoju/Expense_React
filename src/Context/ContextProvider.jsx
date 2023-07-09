@@ -11,6 +11,7 @@ function ContextProvider(props) {
 
    function Logout()
    {
+     localStorage.removeItem("token");
     setLoggedIn(false)
    }
  
