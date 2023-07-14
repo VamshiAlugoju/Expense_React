@@ -1,6 +1,7 @@
 import React from 'react'
 import ExpenseForm from '../../Modals/AddExpense/ExpenseForm';
 import ExpenseItem from '../ExpenseItem';
+
 import "./expensepage.css"
 function ExpensePage() {
 
@@ -9,7 +10,12 @@ function ExpensePage() {
   {
     setshowModal(prev=>!prev);
   }
-
+  
+  function addToList(item)
+  {
+     console.log(item);
+  }
+   
 
   return (
     <div>
@@ -41,7 +47,7 @@ function ExpensePage() {
         <ExpenseItem />
  
         </div>
-        {showModal && <ExpenseForm closeModal={handleModal} />}
+        {showModal && <ExpenseForm addToList={addToList} closeModal={handleModal} />}
     </div>
   )
 }

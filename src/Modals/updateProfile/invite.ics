@@ -1,0 +1,106 @@
+BEGIN:VCALENDAR
+METHOD:REQUEST
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:India Standard Time
+BEGIN:STANDARD
+DTSTART:16010101T000000
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T000000
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN="Diwakar, Deepashree (HR)":mailto:deepa@lotusus.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=vamshialug
+ oju024@gmail.com:mailto:vamshialugoju024@gmail.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN="N, Vimala 
+ (IT/ENG)":mailto:vimala.n@lotusus.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN="PP, Sarath
+  (IT/ENG)":mailto:sarath@lotusus.com
+DESCRIPTION;LANGUAGE=en-US:Hi Vamshi\,\n\n\n\nYour interview today is sched
+ uled with us. First level discussion will be held by Vimala (Sr. Architect
+  & Technical Manager) and Second level discussion with Sarath (Director- D
+ ata & IT Services).\n\n\n\nPlease acknowledge this and confirm your presen
+ ce.\n\n\n\nThank you!\n\n\n\nBest\,\n\nDeepashree Diwakar\n\nHR Manager\n\
+ nLotus Analytics (Lotus Group of Companies)\n\n\n\nMobile: +91 7204662075 
+ II Office: 518.504.8535  II deepa@lotusus.com<mailto:deepa@lotusus.com> II
+  www.lotusus.com<http://www.lotusus.com/UzcFNAM2BDlTdAcjAmcANlQo/UDUANlcr>
+ \n\nIndia Operations: Tallam Altius\, No. 24-25\, 27th Cross\, Industrial 
+ Layout\, Banashankari 2nd Stage\, Bangalore - 560070\n\nCorporate Office: 
+ 101 River Street\, Warrensburg\, NY\, 12885  II Phone: 1.855.LOTUS.US<http
+ ://1.855.lotus.us/>\n\n\n\nThis transmission (including any attachments) m
+ ay contain confidential information\, privileged material (including mater
+ ial protected by the solicitor-client or other applicable privileges)\, or
+  constitute non-public information. Any use of this information by anyone 
+ other than the intended recipient is prohibited. If you have received this
+  transmission in error\, please immediately reply to the sender and delete
+  this information from your system. Use\, dissemination\, distribution\, o
+ r reproduction of this transmission by unintended recipients is not author
+ ized and may be unlawful.\n\n\n\n\n\n\n\n_________________________________
+ _______________________________________________\nMicrosoft Teams meeting\n
+ Join on your computer\, mobile app or room device\nClick here to join the 
+ meeting<https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZDFmZmRlMTk
+ tODk1Yy00NGRmLTlhMDktNDEzZTdiODI0N2Ex%40thread.v2/0?context=%7b%22Tid%22%3
+ a%220f539fc5-677c-4cd8-afb4-cea351643894%22%2c%22Oid%22%3a%225529acf1-6c5b
+ -4550-a323-6da41ae4e569%22%7d>\nMeeting ID: 269 017 575 348\nPasscode: WKF
+ RS5\nDownload Teams<https://www.microsoft.com/en-us/microsoft-teams/downlo
+ ad-app> | Join on the web<https://www.microsoft.com/microsoft-teams/join-a
+ -meeting>\nLearn More<https://aka.ms/JoinTeamsMeeting> | Meeting options<h
+ ttps://teams.microsoft.com/meetingOptions/?organizerId=5529acf1-6c5b-4550-
+ a323-6da41ae4e569&tenantId=0f539fc5-677c-4cd8-afb4-cea351643894&threadId=1
+ 9_meeting_ZDFmZmRlMTktODk1Yy00NGRmLTlhMDktNDEzZTdiODI0N2Ex@thread.v2&messa
+ geId=0&language=en-US>\n__________________________________________________
+ ______________________________\n
+UID:040000008200E00074C5B7101A82E00800000000FEB18DDE05B3D901000000000000000
+ 0100000008E43A91466CF2E4E822C464A6DF28F6D
+SUMMARY;LANGUAGE=en-US:Interview: 10-Jul-23 at 3PM_Lotus Analytics
+DTSTART;TZID=India Standard Time:20230710T150000
+DTEND;TZID=India Standard Time:20230710T160000
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20230710T080938Z
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+SEQUENCE:0
+LOCATION;LANGUAGE=en-US:Microsoft Teams Meeting
+X-MICROSOFT-CDO-APPT-SEQUENCE:0
+X-MICROSOFT-CDO-OWNERAPPTID:2121750270
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-ALLDAYEVENT:FALSE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-ONLINEMEETINGINFORMATION:{"OnlineMeetingChannelId":null\,"Onlin
+ eMeetingProvider":3}
+X-MICROSOFT-SKYPETEAMSMEETINGURL:https://teams.microsoft.com/l/meetup-join/
+ 19%3ameeting_ZDFmZmRlMTktODk1Yy00NGRmLTlhMDktNDEzZTdiODI0N2Ex%40thread.v2/
+ 0?context=%7b%22Tid%22%3a%220f539fc5-677c-4cd8-afb4-cea351643894%22%2c%22O
+ id%22%3a%225529acf1-6c5b-4550-a323-6da41ae4e569%22%7d
+X-MICROSOFT-SCHEDULINGSERVICEUPDATEURL:https://api.scheduler.teams.microsof
+ t.com/teams/0f539fc5-677c-4cd8-afb4-cea351643894/5529acf1-6c5b-4550-a323-6
+ da41ae4e569/19_meeting_ZDFmZmRlMTktODk1Yy00NGRmLTlhMDktNDEzZTdiODI0N2Ex@th
+ read.v2/0
+X-MICROSOFT-SKYPETEAMSPROPERTIES:{"cid":"19:meeting_ZDFmZmRlMTktODk1Yy00NGR
+ mLTlhMDktNDEzZTdiODI0N2Ex@thread.v2"\,"rid":0\,"mid":0\,"uid":null\,"priva
+ te":true\,"type":0}
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-LOCATIONDISPLAYNAME:Microsoft Teams Meeting
+X-MICROSOFT-LOCATIONSOURCE:None
+X-MICROSOFT-LOCATIONS:[{"DisplayName":"Microsoft Teams Meeting"\,"LocationA
+ nnotation":""\,"LocationUri":""\,"LocationStreet":""\,"LocationCity":""\,"
+ LocationState":""\,"LocationCountry":""\,"LocationPostalCode":""\,"Locatio
+ nFullAddress":""}]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT15M
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR
